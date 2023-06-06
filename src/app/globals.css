@@ -8,7 +8,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #bbb;
+  background-color: black;
+  color: white;
 }
 
 a {
@@ -17,5 +18,11 @@ a {
 }
 
 .container {
-  background-color: purple;
+  max-width: 1366px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
