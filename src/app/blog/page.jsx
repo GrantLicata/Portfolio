@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const Blog = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.mainContainer}>
       <Link href="/textId" className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
-            src=""
+            src="https://images.pexels.com/photos/17131288/pexels-photo-17131288/free-photo-of-antelope-canyon-paths.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             width={400}
             height={250}
@@ -17,8 +17,8 @@ const Blog = () => {
           />
         </div>
         <div className={styles.content}>
-          <h1 className={styles.title}></h1>
-          <p className={styles.desc}></p>
+          <h1 className={styles.title}>Test</h1>
+          <p className={styles.desc}>Description</p>
         </div>
       </Link>
     </div>
