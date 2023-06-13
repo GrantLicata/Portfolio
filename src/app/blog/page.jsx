@@ -3,17 +3,15 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-async function getData() {\
+async function getData() {
   // 100 randomized posts will be returned from the JSON placeholder API
   // Fetch functions automatic caching to be removed to allow for data update upon new renders
   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
     cache: "no-store",
   });
-
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
-
   return res.json();
 }
 
