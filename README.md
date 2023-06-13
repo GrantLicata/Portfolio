@@ -1,4 +1,4 @@
-👋 Hi there! I'm Grant licata, a project manager and full-stack software engineer. Welcome to my portfolio website!
+👋 Hi there! I'm Grant licata, a Project Manager and Full-Stack Software Engineer. Welcome to my portfolio website!
 
 🔭 In this portfolio, you'll find a showcase of my skills and experiences as a project manager and software engineer. I have a passion for delivering high-quality software solutions and managing projects from initiation to successful completion.
 
