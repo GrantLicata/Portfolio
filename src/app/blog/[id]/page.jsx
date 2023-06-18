@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 async function getData(id) {
   // 100 randomized posts will be returned from the JSON placeholder API
   // Fetch functions automatic caching to be removed to allow for data update upon new renders
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+  const res = await fetch(`http://jsonplaceholder.typicode.com/posts/${id}`, {
     cache: "no-store",
   });
   if (!res.ok) {

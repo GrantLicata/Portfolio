@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-const { schema } = mongoose;
+const { Schema } = mongoose;
 
-const postScheme = new schema(
+const postSchema = new Schema(
   {
     title: {
       type: String,
@@ -28,4 +28,4 @@ const postScheme = new schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Post", userSchema);
+export default mongoose.model("Post", postSchema);
