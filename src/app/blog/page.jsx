@@ -3,17 +3,28 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-async function getData() {
-  const res = await fetch(`http://grantlicata.com/api/posts`, {
-    // const res = await fetch(`http://localhost:3000/api/posts`, {
+// async function getData() {
+//   const res = await fetch(`http://grantlicata.com/api/posts`, {
+//     // const res = await fetch(`http://localhost:3000/api/posts`, {
+//     cache: "no-store",
+//   });
+//   console.log("This is the response", res);
+//   if (!res.ok) {
+//     throw new Error("Failed to fetch data");
+//   }
+//   return res.json();
+// }
+
+// Testing Function
+const getTestData = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
     cache: "no-store",
   });
-  console.log("This is the response", res);
   if (!res.ok) {
-    throw new Error("Failed to fetch data");
+    setError(true);
   }
   return res.json();
-}
+};
 
 export const metadata = {
   title: "Blog",
@@ -22,7 +33,10 @@ export const metadata = {
 
 const Blog = async () => {
   // Data gathered from API call and assigned to data variable
-  const data = await getData();
+  // const data = await getData();
+
+  // Testing variable
+  const data = await getTestData();
 
   return (
     <div className={styles.mainContainer}>

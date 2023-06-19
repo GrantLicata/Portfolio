@@ -3,16 +3,27 @@ import styles from "./page.module.css";
 import React from "react";
 import { notFound } from "next/navigation";
 
-async function getData(id) {
-  const res = await fetch(`http://grantlicata.com/api/posts/${id}`, {
-    // const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+// async function getData(id) {
+//   const res = await fetch(`http://grantlicata.com/api/posts/${id}`, {
+//     // const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+//     cache: "no-store",
+//   });
+//   if (!res.ok) {
+//     return notFound();
+//   }
+//   return res.json();
+// }
+
+// Testing Function
+const getTestData = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
     cache: "no-store",
   });
   if (!res.ok) {
-    return notFound();
+    setError(true);
   }
   return res.json();
-}
+};
 
 export async function generateMetadata({ params }) {
   const post = await getData(params.id);
@@ -24,7 +35,10 @@ export async function generateMetadata({ params }) {
 
 const Post = async ({ params }) => {
   // Data gathered from API call and assigned to data variable
-  const data = await getData(params.id);
+  // const data = await getData(params.id);
+
+  // Testing variable
+  const data = await getTestData();
 
   return (
     <div className={styles.container}>
