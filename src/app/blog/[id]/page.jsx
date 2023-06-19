@@ -25,20 +25,20 @@ const getTestData = async () => {
   return res.json();
 };
 
-export async function generateMetadata({ params }) {
-  const post = await getData(params.id);
-  return {
-    title: post.title,
-    description: post.desc,
-  };
-}
+// export async function generateMetadata({ params }) {
+//   const post = await getData(params.id);
+//   return {
+//     title: post.title,
+//     description: post.desc,
+//   };
+// }
 
 const Post = async ({ params }) => {
   // Data gathered from API call and assigned to data variable
   // const data = await getData(params.id);
 
   // Testing variable
-  const data = await getTestData();
+  const data = await getTestData(params.id);
 
   return (
     <div className={styles.container}>
