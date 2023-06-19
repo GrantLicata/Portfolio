@@ -4,6 +4,11 @@ import React, { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import useSWR from "swr";
 
+export const metadata = {
+  title: "Dashboard",
+  description: "The interface for management of all profile components",
+};
+
 const Dashboard = () => {
   // const [data, setData] = useState([]);
   // const [error, setError] = useState(false);
