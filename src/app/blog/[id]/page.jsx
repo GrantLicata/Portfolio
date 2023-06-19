@@ -4,9 +4,8 @@ import React from "react";
 import { notFound } from "next/navigation";
 
 async function getData(id) {
-  // 100 randomized posts will be returned from the JSON placeholder API
-  // Fetch functions automatic caching to be removed to allow for data update upon new renders
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+  const res = await fetch(`http://grantlicata/api/posts/${id}`, {
+    // const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
     cache: "no-store",
   });
   if (!res.ok) {
