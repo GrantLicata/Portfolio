@@ -1,15 +1,35 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
 import Conversation from "/public/conversation.png";
-
-export const metadata = {
-  title: "Contact",
-  description: "A quick and easy way to contact me",
-};
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_nwomeck",
+        "template_rlhhmnm",
+        form.current,
+        "e1zOwqGnuMxbuWjqt"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Let&apos;s Keep in Touch</h1>
@@ -22,16 +42,27 @@ const Contact = () => {
             className={styles.image}
           />
         </div>
-        <form className={styles.form}>
-          <input type="text" placeholder="name" className={styles.input} />
-          <input type="text" placeholder="email" className={styles.input} />
+        <form className={styles.form} ref={form} onSubmit={sendEmail}>
+          <input
+            type="text"
+            placeholder="name"
+            name="user_name"
+            className={styles.input}
+          />
+          <input
+            type="text"
+            placeholder="email"
+            name="user_email"
+            className={styles.input}
+          />
           <textarea
             className={styles.textArea}
             placeholder="message"
+            name="message"
             cols="30"
             rows="10"
           ></textarea>
-          <Button url="#" text="Send" />
+          <button className={styles.button}>Send</button>
         </form>
       </div>
     </div>

@@ -52,3 +52,13 @@
   font-weight: bold;
   border-radius: 5px;
 }
+
+.button {
+  padding: 20px;
+  cursor: pointer;
+  background-color: #5553c2;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+}
