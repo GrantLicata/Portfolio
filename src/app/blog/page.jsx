@@ -37,7 +37,7 @@ const Blog = async () => {
   // const data = await getData();
 
   // Testing variable
-  const data = await getTestData();
+  // const data = await getTestData();
 
   return (
     <div className={styles.mainContainer}>
