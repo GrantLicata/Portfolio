@@ -2,6 +2,7 @@
 
 .env
 DEVNOTES
+/archive
 
 # dependencies
 /node_modules

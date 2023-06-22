@@ -2,6 +2,10 @@ import React from "react";
 import styles from "./footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Facebook from "public/1.png";
+import Instagram from "public/2.png";
+import LinkedIn from "public/3.png";
+import YouTube from "public/4.png";
 
 const Footer = () => {
   return (
@@ -10,7 +14,7 @@ const Footer = () => {
       <div className={styles.social}>
         <Link href="https://www.facebook.com/grant.licata/">
           <Image
-            src="/1.png"
+            src={Facebook}
             width={15}
             height={15}
             className={styles.icon}
@@ -19,7 +23,7 @@ const Footer = () => {
         </Link>
         <Link href="https://www.instagram.com/grantlicata/">
           <Image
-            src="/2.png"
+            src={Instagram}
             width={15}
             height={15}
             className={styles.icon}
@@ -28,7 +32,7 @@ const Footer = () => {
         </Link>
         <Link href="https://www.linkedin.com/in/grantlicata/">
           <Image
-            src="/3.png"
+            src={LinkedIn}
             width={15}
             height={15}
             className={styles.icon}
@@ -37,7 +41,7 @@ const Footer = () => {
         </Link>
         <Link href="https://www.youtube.com/@grantlicata4493/featured">
           <Image
-            src="/4.png"
+            src={YouTube}
             width={15}
             height={15}
             className={styles.icon}

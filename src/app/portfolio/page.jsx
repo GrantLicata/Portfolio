@@ -1,27 +1,37 @@
 import React from "react";
 import styles from "./page.module.css";
-import Link from "next/link";
+import Button from "@/components/Button/Button";
+import Image from "next/image";
+import { items } from "./data.js";
+import { notFound } from "next/navigation";
 
-export const metadata = {
-  title: "Portfolio",
-  description: "My collection of works both professional and recreational",
+const getData = () => {
+  const data = items.websites;
+  if (data) {
+    return data;
+  }
+  return notFound();
 };
 
 const Portfolio = () => {
+  const data = getData();
+
   return (
     <div className={styles.container}>
-      <h1 className={styles.selectTitle}>Choose a gallery</h1>
-      <div className={styles.items}>
-        <Link href="/portfolio/illustrations" className={styles.item}>
-          <span className={styles.title}>Illustrations</span>
-        </Link>
-        <Link href="/portfolio/websites" className={styles.item}>
-          <span className={styles.title}>Websites</span>
-        </Link>
-        <Link href="/portfolio/applications" className={styles.item}>
-          <span className={styles.title}>Applications</span>
-        </Link>
-      </div>
+      <h1 className={styles.categoryTitle}>Applications</h1>
+
+      {data.map((item) => (
+        <div className={styles.item} key={item.id}>
+          <div className={styles.content}>
+            <h1 className={styles.title}>{item.title}</h1>
+            <p className={styles.description}>{item.desc}</p>
+            <Button text="See More" url="#" />
+          </div>
+          <div className={styles.imgContainer}>
+            <Image className={styles.img} fill={true} src={item.image} alt="" />
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
