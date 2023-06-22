@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        Grant
+        Hi, I'm Grant.
       </Link>
       <div className={styles.links}>
         <DarkModeToggle />
