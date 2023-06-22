@@ -6,9 +6,11 @@ import Image from "next/image";
 import Button from "@/components/Button/Button";
 import Conversation from "/public/conversation.png";
 import emailjs from "@emailjs/browser";
+import { useRouter } from "next/navigation";
 
 const Contact = () => {
   const form = useRef();
+  const router = useRouter();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -28,6 +30,8 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    alert("Your message has been sent!");
+    router.push("/");
   };
 
   return (
