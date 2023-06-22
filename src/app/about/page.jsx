@@ -27,7 +27,7 @@ const About = () => {
       </div>
       <div className={styles.textContainer}>
         <div className={styles.item}>
-          <h1 className={styles.title}>Who Are We?</h1>
+          <h1 className={styles.title}>Who Am I?</h1>
           <p className={styles.desc}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
             corporis consequatur molestiae delectus blanditiis quas eligendi in
@@ -41,14 +41,18 @@ const About = () => {
           </p>
         </div>
         <div className={styles.item}>
-          <h1 className={styles.title}>What We Do?</h1>
+          <h1 className={styles.title}>About My Work?</h1>
           <p className={styles.desc}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
             sapiente, ipsa dolore officia pariatur aliquam id nobis odio, minus
             explicabo, dicta dolorem voluptates ducimus illo molestiae molestias
             iste culpa doloremque.
             <br />
-            <br /> - Dynamic Websites
+            <br /> - Project Management
+            <br />
+            <br /> - Software Development
+            <br />
+            <br /> - Product Design
           </p>
           <Button url="/contact" text="Contact"></Button>
         </div>

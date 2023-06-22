@@ -3,28 +3,29 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-// async function getData() {
-//   const res = await fetch(`http://grantlicata.com/api/posts`, {
-//     // const res = await fetch(`http://localhost:3000/api/posts`, {
-//     cache: "no-store",
-//   });
-//   console.log("This is the response", res);
-//   if (!res.ok) {
-//     throw new Error("Failed to fetch data");
-//   }
-//   return res.json();
-// }
-
-// Testing Function
-const getTestData = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+async function getData() {
+  // const res = await fetch(`http://grantlicata.com/api/posts`, {
+  const res = await fetch(`http://localhost:3000/api/posts`, {
     cache: "no-store",
   });
+  console.log("This is the response", res);
   if (!res.ok) {
-    setError(true);
+    throw new Error("Failed to fetch data");
   }
   return res.json();
-};
+}
+
+// // Testing Function
+// const getTestData = async () => {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+//     cache: "no-store",
+//   });
+//   console.log("Database get request response:", res);
+//   if (!res.ok) {
+//     setError(true);
+//   }
+//   return res.json();
+// };
 
 export const metadata = {
   title: "Blog",
