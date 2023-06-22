@@ -15,11 +15,11 @@ const links = [
     title: "Portfolio",
     url: "/portfolio",
   },
-  {
-    id: 3,
-    title: "Blog",
-    url: "/blog",
-  },
+  // {
+  //   id: 3,
+  //   title: "Blog",
+  //   url: "/blog",
+  // },
   {
     id: 4,
     title: "About",
@@ -30,11 +30,11 @@ const links = [
     title: "Contact",
     url: "/contact",
   },
-  {
-    id: 6,
-    title: "Dashboard",
-    url: "/dashboard",
-  },
+  // {
+  //   id: 6,
+  //   title: "Dashboard",
+  //   url: "/dashboard",
+  // },
 ];
 
 const Navbar = () => {
@@ -50,14 +50,14 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-        <button
+        {/* <button
           className={styles.logout}
           onClick={() => {
             console.log("Logged out");
           }}
         >
           Logout
-        </button>
+        </button> */}
       </div>
     </div>
   );
