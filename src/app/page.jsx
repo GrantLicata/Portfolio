@@ -13,8 +13,8 @@ export default function Home() {
           <br /> Develop.
         </h1>
         <p className={styles.description}>
-          Unlocking the Power of Seamless Project Management, Inspired Design,
-          and Cutting-Edge Software Development
+          Unlocking the power of seamless project management, inspired design,
+          and cutting-edge software development
         </p>
         <Button url="/portfolio" text="See My Work" />
       </div>
