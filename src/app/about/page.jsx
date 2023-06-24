@@ -14,9 +14,9 @@ const About = () => {
           className={styles.img}
         />
         <div className={styles.imgText}>
-          <h1 className={styles.imgTitle}>Digital Storytellers</h1>
+          <h1 className={styles.imgTitle}>Innovation Engine</h1>
           <h2 className={styles.imgDesc}>
-            Handcrafting award winning digital experiences
+            Transforming ideas into remarkable digital experiences
           </h2>
         </div>
       </div>
@@ -25,61 +25,36 @@ const About = () => {
           <h1 className={styles.title}>Who Am I?</h1>
           <p className={styles.desc}>
             Welcome to my profile page! I&apos;m a PMP certified Project Manager
-            and Certified ScrumMaster (CSM) with a passion for leading teams and
-            delivering successful projects. With six years of experience in the
-            Biotechnology industry, I have honed my skills in project
-            management, particularly in the areas of business process
-            development and improvement.
+            and Certified ScrumMaster (CSM) with six years of experience in the
+            Biotechnology industry. I specialize in project management,
+            particularly in business process development and improvement. With a
+            disciplined approach to project management, I excel at planning,
+            resource allocation, and fostering collaboration to deliver
+            exceptional results.
             <br />
             <br />
-            As a PMP certified professional, I bring a disciplined approach to
-            project management, ensuring effective planning, resource
-            allocation, and risk management. I thrive in dynamic environments
-            and excel at fostering collaboration, driving teams towards project
-            goals, and delivering results that exceed expectations.
-            <br />
-            <br />
-            In addition to my project management expertise, I am also a Full
-            Stack Software Developer. I completed a rigorous software
-            development bootcamp, specializing in Python and the MERN stack
-            (MongoDB, Express.js, React.js, and Node.js). This training has
-            equipped me with the skills to develop robust web applications from
-            the ground up.
-            <br />
-            <br />
-            I find joy in turning ideas into reality, and I often spend my spare
-            time developing web applications that showcase my creativity and
-            technical prowess. This allows me to stay up to date with the latest
-            technologies and continuously refine my programming skills.
+            In addition to my project management expertise, I am a Full Stack
+            Software Developer. I completed a rigorous software development
+            bootcamp, specializing in Python and the MERN stack (MongoDB,
+            Express.js, React.js, and Node.js). This enables me to develop
+            robust web applications from scratch. I&apos;m passionate about
+            turning ideas into reality and continuously refining my programming
+            skills by exploring the latest technologies.
             <br />
             <br />
             Combining my project management acumen with my software development
-            expertise, I am uniquely positioned to bridge the gap between
-            business objectives and technical implementation. I thrive in
-            collaborative environments where I can leverage my multidisciplinary
-            background to drive innovation and achieve tangible results.
-            <br />
-            <br />
-            I&apos;m excited to connect with like-minded professionals,
-            collaborate on challenging projects, and contribute my skills to
-            create impactful solutions. Feel free to explore my profile and
-            reach out to discuss potential opportunities!
+            expertise, I bridge the gap between business objectives and
+            technical implementation. I thrive in collaborative environments
+            where I can leverage my multidisciplinary background to drive
+            innovation and achieve tangible results. I&apos;m eager to connect
+            with like-minded professionals, collaborate on challenging projects,
+            and contribute my skills to create impactful solutions. Feel free to
+            explore my profile and reach out to discuss potential opportunities!
           </p>
         </div>
         <div className={styles.item}>
           <h1 className={styles.title}>About My Work?</h1>
-          <p className={styles.desc}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            sapiente, ipsa dolore officia pariatur aliquam id nobis odio, minus
-            explicabo, dicta dolorem voluptates ducimus illo molestiae molestias
-            iste culpa doloremque.
-            <br />
-            <br /> - Project Management
-            <br />
-            <br /> - Software Development
-            <br />
-            <br /> - Product Design
-          </p>
+          <p className={styles.desc}>This section is in development!</p>
           <Button url="/contact" text="Contact"></Button>
         </div>
       </div>
