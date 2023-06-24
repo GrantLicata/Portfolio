@@ -10,7 +10,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Lead.
           <br /> Design.
-          <br /> Development.
+          <br /> Develop.
         </h1>
         <p className={styles.description}>
           Unlocking the Power of Seamless Project Management, Inspired Design,
