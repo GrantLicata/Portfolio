@@ -24,8 +24,8 @@ const About = () => {
         <div className={styles.item}>
           <h1 className={styles.title}>Who Am I?</h1>
           <p className={styles.desc}>
-            Welcome to my profile page! I'm a PMP certified Project Manager and
-            Certified ScrumMaster (CSM) with a passion for leading teams and
+            Welcome to my profile page! I&apos;m a PMP certified Project Manager
+            and Certified ScrumMaster (CSM) with a passion for leading teams and
             delivering successful projects. With six years of experience in the
             Biotechnology industry, I have honed my skills in project
             management, particularly in the areas of business process
@@ -60,10 +60,10 @@ const About = () => {
             background to drive innovation and achieve tangible results.
             <br />
             <br />
-            I'm excited to connect with like-minded professionals, collaborate
-            on challenging projects, and contribute my skills to create
-            impactful solutions. Feel free to explore my profile and reach out
-            to discuss potential opportunities!
+            I&apos;m excited to connect with like-minded professionals,
+            collaborate on challenging projects, and contribute my skills to
+            create impactful solutions. Feel free to explore my profile and
+            reach out to discuss potential opportunities!
           </p>
         </div>
         <div className={styles.item}>
