@@ -39,3 +39,9 @@
   font-weight: 300;
   text-align: justify;
 }
+
+.internalLink {
+  color: rgb(74, 74, 238);
+  font-weight: 400;
+  cursor: pointer;
+}
