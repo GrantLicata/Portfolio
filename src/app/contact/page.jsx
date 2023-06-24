@@ -49,13 +49,13 @@ const Contact = () => {
         <form className={styles.form} ref={form} onSubmit={sendEmail}>
           <input
             type="text"
-            placeholder="Your name"
+            placeholder="your name"
             name="user_name"
             className={styles.input}
           />
           <input
             type="text"
-            placeholder="Your email"
+            placeholder="your email"
             name="user_email"
             className={styles.input}
           />
