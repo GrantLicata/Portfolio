@@ -3,6 +3,7 @@ import { Inter, Roboto } from "next/font/google";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
           <div className="container">
             <Navbar />
             {children}
+            <Analytics />
             <Footer />
           </div>
         </ThemeProvider>
