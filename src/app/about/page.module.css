@@ -59,6 +59,7 @@
 
   .item {
     margin-top: 40px;
+    gap: 15px;
   }
 
   .desc {
