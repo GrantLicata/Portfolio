@@ -58,7 +58,11 @@
 
 @media only screen and (max-width: 768px) {
   .mainTitle {
-    font-size: 70px;
+    font-size: 58px;
+  }
+
+  .categoryTitle {
+    font-size: 28px;
   }
 
   .img {
