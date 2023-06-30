@@ -35,4 +35,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
