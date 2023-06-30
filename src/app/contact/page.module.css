@@ -46,11 +46,12 @@
   background-color: transparent;
   border: none;
   outline: none;
-  color: #bbb;
+  color: #bbbbbbad;
   border: 3px solid #bbb;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 300;
   border-radius: 5px;
+  resize: none;
 }
 
 .button {
@@ -61,4 +62,41 @@
   border-radius: 5px;
   width: max-content;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .imgContainer {
+    display: none;
+  }
+
+  .content {
+    gap: 0px;
+    width: auto;
+  }
+
+  .input,
+  .textArea {
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #bbbbbbad;
+    border: 3px solid #bbb;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 5px;
+    resize: none;
+    width: auto;
+  }
+
+  .button {
+    width: auto;
+    color: white;
+  }
 }
