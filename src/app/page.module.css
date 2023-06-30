@@ -25,6 +25,11 @@
   animation: move 3s infinite ease alternate;
 }
 
+.description {
+  font-size: 24px;
+  font-weight: 300;
+}
+
 @keyframes move {
   from {
     transform: translateY(-10px);
@@ -34,7 +39,21 @@
   }
 }
 
-.description {
-  font-size: 24px;
-  font-weight: 300;
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 58px;
+    background: linear-gradient(to bottom, #005893, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 659px) {
+  .image {
+    display: none;
+  }
 }
