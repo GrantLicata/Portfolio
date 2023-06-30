@@ -30,4 +30,10 @@
   .social {
     padding-bottom: 5px;
   }
+
+  .icon {
+    height: 25px;
+    width: auto;
+    padding-right: 3px;
+  }
 }
