@@ -45,3 +45,19 @@
   font-weight: 400;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imgContainer {
+    display: none;
+  }
+
+  .item {
+    margin-top: 40px;
+  }
+}
