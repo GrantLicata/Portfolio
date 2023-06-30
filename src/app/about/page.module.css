@@ -60,4 +60,8 @@
   .item {
     margin-top: 40px;
   }
+
+  .desc {
+    text-align: left;
+  }
 }
