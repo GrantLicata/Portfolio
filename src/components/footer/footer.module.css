@@ -16,3 +16,18 @@
   opacity: 0.9;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .social {
+    padding-bottom: 5px;
+  }
+}
