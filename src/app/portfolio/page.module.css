@@ -55,3 +55,21 @@
   width: max-content;
   color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  .mainTitle {
+    font-size: 70px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .imgContainer {
+    display: none;
+  }
+
+  .item:nth-child(2n + 1) {
+    display: none;
+  }
+}
