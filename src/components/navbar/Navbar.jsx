@@ -1,8 +1,10 @@
 "use client";
+import React, { useState } from "react";
 import Link from "next/link";
-import React from "react";
+// import Image from "next/image";
 import styles from "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+// import Menu from "public/menu.png";
 
 const links = [
   {
@@ -28,11 +30,24 @@ const links = [
 ];
 
 const Navbar = () => {
+  // const [menuState, setMenuState] = useState(false);
+
+  // const toggleMenu = () => {
+  //   if (menuState === true) {
+  //     setMenuState(false);
+  //     console.log("Menu closed");
+  //   } else {
+  //     setMenuState(true);
+  //     console.log("Menu opened");
+  //   }
+  // };
+
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
         Hi, I&apos;m Grant.
       </Link>
+      {/* <Image src={Menu} className={styles.menu} /> */}
       <div className={styles.links}>
         <DarkModeToggle />
         {/* Generate a list of navigation links using the "Links" list above */}

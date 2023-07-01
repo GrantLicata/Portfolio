@@ -25,6 +25,10 @@
   border-radius: 3px;
 }
 
+.menu {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     height: auto;
@@ -45,4 +49,11 @@
   .logo {
     padding-bottom: 5px;
   }
+
+  /* .menu {
+    display: inline;
+    height: 30px;
+    width: auto;
+    filter: invert() opacity(70%);
+  } */
 }
