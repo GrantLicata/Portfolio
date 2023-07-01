@@ -43,6 +43,7 @@ const Contact = () => {
             src={Conversation}
             alt=""
             fill={true}
+            sizes="max-width: 600px, max-height: 600px"
             className={styles.image}
           />
         </div>
