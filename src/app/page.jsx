@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.item}>
         <h1 className={styles.title}>
-          Lead.
+          Learn.
           <br /> Design.
           <br /> Develop.
         </h1>
