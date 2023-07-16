@@ -14,13 +14,18 @@ const links = [
   },
   {
     id: 2,
+    title: "About",
+    url: "/about",
+  },
+  {
+    id: 3,
     title: "Portfolio",
     url: "/portfolio",
   },
   {
     id: 4,
-    title: "About",
-    url: "/about",
+    title: "Experience",
+    url: "/experience",
   },
   {
     id: 5,
