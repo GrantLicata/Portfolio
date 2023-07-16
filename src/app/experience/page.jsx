@@ -6,7 +6,7 @@ import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
 
-const getExperience = () => {
+const getEmployment = () => {
   const data = items.experience;
   if (data) {
     return data;
@@ -23,7 +23,7 @@ const getEducation = () => {
 };
 
 const Experience = () => {
-  const experience = getExperience();
+  const employment = getEmployment();
   const education = getEducation();
 
   return (
@@ -31,7 +31,7 @@ const Experience = () => {
       <h1 className={styles.mainTitle}>My Experience</h1>
       <h2 className={styles.categoryTitle}>Employment</h2>
       <div className={styles.list}>
-        {experience.map((item) => (
+        {employment.map((item) => (
           <div className={styles.item} key={item.id}>
             <div className={styles.cardLeft}>
               <p className={styles.dates}>
