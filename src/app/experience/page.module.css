@@ -35,6 +35,16 @@
   max-width: 600px;
 }
 
+.lightModeItem {
+  display: flex;
+  border-radius: 5px;
+  background-color: rgba(234, 232, 232, 0.784);
+  color: black;
+  /* margin-top: 50px; */
+  padding: 18px;
+  max-width: 600px;
+}
+
 .item:hover {
   display: flex;
   border-radius: 5px;
@@ -58,13 +68,24 @@
   flex: 3;
 }
 
-.titleAndEmployer {
+.cardTitle {
   color: white;
   padding-bottom: 10px;
 }
 
+.lightModeCardTitle {
+  color: black;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
 .link {
   color: #a3a2fd;
+  cursor: pointer;
+}
+
+.lightModeLink {
+  color: #6f6cff;
   cursor: pointer;
 }
 

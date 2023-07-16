@@ -80,7 +80,7 @@ export const items = {
     },
     {
       organization: "PMI",
-      title: "Project Management Professional",
+      title: "Project Management Professional (PMP)",
       year_start: 2020,
       year_end: 2023,
       organization_url: "https://www.pmi.org/",

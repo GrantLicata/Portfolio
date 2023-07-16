@@ -1,10 +1,13 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./page.module.css";
 import Button from "@/components/Button/Button";
 import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
+import { ThemeContext } from "@/context/ThemeContext";
 
 const getEmployment = () => {
   const data = items.experience;
@@ -31,6 +34,7 @@ const getCertifications = () => {
 };
 
 const Experience = () => {
+  const { toggle, mode } = useContext(ThemeContext);
   const employment = getEmployment();
   const education = getEducation();
   const certifications = getCertifications();
@@ -41,16 +45,28 @@ const Experience = () => {
       <h2 className={styles.categoryTitle}>Employment</h2>
       <div className={styles.list}>
         {employment.map((item) => (
-          <div className={styles.item} key={item.id}>
+          <div
+            className={mode === "dark" ? styles.item : styles.lightModeItem}
+            key={item.id}
+          >
             <div className={styles.cardLeft}>
               <p className={styles.dates}>
                 {item.year_start} - {item.year_end}
               </p>
             </div>
             <div className={styles.cardRight}>
-              <p className={styles.titleAndEmployer}>
+              <p
+                className={
+                  mode === "dark" ? styles.cardTitle : styles.lightModeCardTitle
+                }
+              >
                 {item.title} &bull;{" "}
-                <Link className={styles.link} href={item.employer_url}>
+                <Link
+                  className={
+                    mode === "dark" ? styles.link : styles.lightModeLink
+                  }
+                  href={item.employer_url}
+                >
                   {item.employer}
                 </Link>
               </p>
@@ -63,16 +79,28 @@ const Experience = () => {
       <h2 className={styles.categoryTitle}>Education</h2>
       <div className={styles.list}>
         {education.map((item) => (
-          <div className={styles.item} key={item.id}>
+          <div
+            className={mode === "dark" ? styles.item : styles.lightModeItem}
+            key={item.id}
+          >
             <div className={styles.cardLeft}>
               <p className={styles.dates}>
                 {item.year_start} - {item.year_end}
               </p>
             </div>
             <div className={styles.cardRight}>
-              <p className={styles.titleAndEmployer}>
+              <p
+                className={
+                  mode === "dark" ? styles.cardTitle : styles.lightModeCardTitle
+                }
+              >
                 {item.degree} &bull;{" "}
-                <Link className={styles.link} href={item.school_url}>
+                <Link
+                  className={
+                    mode === "dark" ? styles.link : styles.lightModeLink
+                  }
+                  href={item.school_url}
+                >
                   {item.school}
                 </Link>
               </p>
@@ -85,7 +113,10 @@ const Experience = () => {
       <h2 className={styles.categoryTitle}>Certifications</h2>
       <div className={styles.list}>
         {certifications.map((item) => (
-          <div className={styles.item} key={item.id}>
+          <div
+            className={mode === "dark" ? styles.item : styles.lightModeItem}
+            key={item.id}
+          >
             <div className={styles.cardLeft}>
               <p className={styles.dates}>
                 {item.year_start} - {item.year_end}
@@ -94,7 +125,12 @@ const Experience = () => {
             <div className={styles.cardRight}>
               <p className={styles.titleAndEmployer}>
                 {item.title} &bull;{" "}
-                <Link className={styles.link} href={item.organization_url}>
+                <Link
+                  className={
+                    mode === "dark" ? styles.link : styles.lightModeLink
+                  }
+                  href={item.organization_url}
+                >
                   {item.organization}
                 </Link>
               </p>
