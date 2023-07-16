@@ -48,4 +48,24 @@ export const items = {
       ],
     },
   ],
+  education: [
+    {
+      school: "Coding Dojo",
+      degree: "Full Stack Software Development",
+      year_start: 2022,
+      year_end: 2023,
+      school_url: "https://www.codingdojo.com/",
+      description:
+        "The Full Stack Web Development program at Coding Dojo fosters a mastery of the fundamental building blocks of web and software development. This program covers the full technology stacks of both Python and MERN.",
+    },
+    {
+      school: "Western Washington University",
+      degree: "B.S. Molecular and Cellular Biology",
+      year_start: 2012,
+      year_end: 2016,
+      school_url: "https://www.wwu.edu/",
+      description:
+        "The B.S. degree in Molecular and Cell Biology places emphasis on the molecular biology and biochemistry that control cell functions. This degree included courses in math, physics, and chemistry, along with core biology curriculum. The degree provides a conceptual foundation in biology, critical thinking skills, quantitative problem-solving abilities, leadership, team-building, and scientific research skills.",
+    },
+  ],
 };
