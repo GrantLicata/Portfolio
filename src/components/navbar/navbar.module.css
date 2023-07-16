@@ -16,6 +16,15 @@
   gap: 20px;
 }
 
+.lightModeLink:hover {
+  color: black;
+  text-shadow: 0px 0px 15px #9291c4df;
+}
+
+.darkModeLink:hover {
+  color: white;
+}
+
 .logout {
   padding: 5px;
   border: none;

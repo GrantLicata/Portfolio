@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
-// import Image from "next/image";
 import styles from "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+import { ThemeContext } from "../../context/ThemeContext";
+// import Image from "next/image";
 // import Menu from "public/menu.png";
 
 const links = [
@@ -35,6 +36,8 @@ const links = [
 ];
 
 const Navbar = () => {
+  const { toggle, mode } = useContext(ThemeContext);
+
   // const [menuState, setMenuState] = useState(false);
 
   // const toggleMenu = () => {
@@ -57,7 +60,13 @@ const Navbar = () => {
         <DarkModeToggle />
         {/* Generate a list of navigation links using the "Links" list above */}
         {links.map((link) => (
-          <Link key={link.id} href={link.url} className={styles.link}>
+          <Link
+            key={link.id}
+            href={link.url}
+            className={
+              mode === "light" ? styles.lightModeLink : styles.darkModeLink
+            }
+          >
             {link.title}
           </Link>
         ))}
