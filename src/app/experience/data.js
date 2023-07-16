@@ -1,5 +1,5 @@
 export const items = {
-  applications: [
+  experience: [
     {
       title: "Project Manager",
       employer: "Seagen",

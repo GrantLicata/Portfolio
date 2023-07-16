@@ -17,74 +17,19 @@
 
 .item {
   display: flex;
-  gap: 50px;
+  border-radius: 10px;
+  background-color: rgb(37, 37, 37);
   margin-top: 50px;
-  margin-bottom: 100px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
 }
 
-.item:nth-child(2n + 1) {
-  flex-direction: row-reverse;
-}
-
-.imgContainer {
+.cardLeft {
   flex: 1;
-  height: 500px;
-  position: relative;
 }
 
-.img {
-  object-fit: contain;
-}
-
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-}
-
-.title {
-  font-size: 50px;
-}
-
-.description {
-  font-size: 18px;
-}
-
-.inDevelopmentButton {
-  padding: 20px;
-  cursor: pointer;
-  background-color: #525256;
-  border: none;
-  border-radius: 5px;
-  width: max-content;
-  color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  .mainTitle {
-    font-size: 58px;
-  }
-
-  .categoryTitle {
-    font-size: 28px;
-  }
-
-  .item {
-    margin-top: 40px;
-    margin-bottom: 80px;
-  }
-
-  .img {
-    display: none;
-  }
-
-  .imgContainer {
-    display: none;
-  }
-
-  .item:nth-child(2n + 1) {
-    flex-direction: none;
-  }
+.cardRight {
+  flex: 2;
 }
