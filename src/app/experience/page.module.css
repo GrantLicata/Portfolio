@@ -9,10 +9,20 @@
 
 .mainTitle {
   font-size: 80px;
+  /* position: relative;
+  top: 10px; */
 }
 
 .categoryTitle {
   color: #53c28b;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .item {
@@ -20,10 +30,18 @@
   border-radius: 10px;
   background-color: rgba(37, 37, 37, 0.784);
   color: #d3d3d3;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   padding: 18px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  max-width: 600px;
+}
+
+.item:hover {
+  display: flex;
+  border-radius: 10px;
+  background-color: rgba(74, 74, 74, 0.784);
+  color: #d3d3d3;
+  /* margin-top: 50px; */
+  padding: 18px;
   max-width: 600px;
 }
 
@@ -43,6 +61,11 @@
 .titleAndEmployer {
   color: white;
   padding-bottom: 10px;
+}
+
+.link {
+  color: #a3a2fd;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
