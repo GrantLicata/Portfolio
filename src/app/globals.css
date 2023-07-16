@@ -39,6 +39,24 @@ a {
   justify-content: space-between;
 }
 
+/* Scroll bar modifications */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a49ab;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8887e8;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     padding: 0px 30px;
