@@ -18,7 +18,8 @@
 .item {
   display: flex;
   border-radius: 10px;
-  background-color: rgb(37, 37, 37);
+  background-color: rgba(37, 37, 37, 0.784);
+  color: #d3d3d3;
   margin-top: 50px;
   padding: 18px;
   /* margin-left: auto;
@@ -32,6 +33,7 @@
 
 .dates {
   font-size: 13px;
+  padding-right: 4px;
 }
 
 .cardRight {
@@ -41,4 +43,14 @@
 .titleAndEmployer {
   color: white;
   padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainTitle {
+    font-size: 45px;
+  }
+
+  .categoryTitle {
+    font-size: 28px;
+  }
 }
