@@ -25,12 +25,12 @@ const Experience = () => {
       {data.map((item) => (
         <div className={styles.item} key={item.id}>
           <div className={styles.cardLeft}>
-            <p>
+            <p className={styles.dates}>
               {item.year_start} - {item.year_end}
             </p>
           </div>
           <div className={styles.cardRight}>
-            <p>
+            <p className={styles.titleAndEmployer}>
               {item.title} - {item.employer}
             </p>
             <p>{item.description}</p>
