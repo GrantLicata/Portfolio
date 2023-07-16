@@ -68,4 +68,24 @@ export const items = {
         "The B.S. degree in Molecular and Cell Biology places emphasis on the molecular biology and biochemistry that control cell functions. This degree included courses in math, physics, and chemistry, along with core biology curriculum. The degree provides a conceptual foundation in biology, critical thinking skills, quantitative problem-solving abilities, leadership, team-building, and scientific research skills.",
     },
   ],
+  certifications: [
+    {
+      organization: "Scrum Alliance",
+      title: "Certified Scrum Master (CSM)",
+      year_start: 2023,
+      year_end: 2025,
+      organization_url: "https://www.scrumalliance.org/",
+      description:
+        "A scrum master is the scrum team member tasked with fostering an effective and productive working environment and guiding others to understand scrum values, principles and practices. Scrum masters tend to be people-oriented, have a high level of emotional intelligence, and find joy in helping team members to grow.",
+    },
+    {
+      organization: "PMI",
+      title: "Project Management Professional",
+      year_start: 2020,
+      year_end: 2023,
+      organization_url: "https://www.pmi.org/",
+      description:
+        "As the world’s leading authority on project management, PMI created PMP Certification to recognize project managers who have proven they have the skills to successfully manage projects. Project Management Professional (PMP)® certification represents an elite group of project managers. It proves project leadership experience and expertise in any way of working.",
+    },
+  ],
 };

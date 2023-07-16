@@ -22,9 +22,18 @@ const getEducation = () => {
   return notFound();
 };
 
+const getCertifications = () => {
+  const data = items.certifications;
+  if (data) {
+    return data;
+  }
+  return notFound();
+};
+
 const Experience = () => {
   const employment = getEmployment();
   const education = getEducation();
+  const certifications = getCertifications();
 
   return (
     <div className={styles.container}>
@@ -65,6 +74,28 @@ const Experience = () => {
                 {item.degree} &bull;{" "}
                 <Link className={styles.link} href={item.school_url}>
                   {item.school}
+                </Link>
+              </p>
+              <p>{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <h2 className={styles.categoryTitle}>Certifications</h2>
+      <div className={styles.list}>
+        {certifications.map((item) => (
+          <div className={styles.item} key={item.id}>
+            <div className={styles.cardLeft}>
+              <p className={styles.dates}>
+                {item.year_start} - {item.year_end}
+              </p>
+            </div>
+            <div className={styles.cardRight}>
+              <p className={styles.titleAndEmployer}>
+                {item.title} &bull;{" "}
+                <Link className={styles.link} href={item.organization_url}>
+                  {item.organization}
                 </Link>
               </p>
               <p>{item.description}</p>

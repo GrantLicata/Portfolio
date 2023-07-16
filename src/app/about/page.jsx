@@ -14,12 +14,12 @@ const About = () => {
           alt=""
           className={styles.img}
         />
-        <div className={styles.imgText}>
+        {/* <div className={styles.imgText}>
           <h1 className={styles.imgTitle}>Innovation Engine</h1>
           <h2 className={styles.imgDesc}>
             Transforming ideas into remarkable digital experiences
           </h2>
-        </div>
+        </div> */}
       </div>
       <div className={styles.textContainer}>
         <div className={styles.item}>

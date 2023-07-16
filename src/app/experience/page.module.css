@@ -27,7 +27,7 @@
 
 .item {
   display: flex;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgba(37, 37, 37, 0.784);
   color: #d3d3d3;
   /* margin-top: 50px; */
@@ -37,7 +37,7 @@
 
 .item:hover {
   display: flex;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgba(74, 74, 74, 0.784);
   color: #d3d3d3;
   /* margin-top: 50px; */
