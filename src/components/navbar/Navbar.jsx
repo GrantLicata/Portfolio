@@ -4,8 +4,8 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { ThemeContext } from "../../context/ThemeContext";
-// import Image from "next/image";
-// import Menu from "public/menu.png";
+import Image from "next/image";
+import Menu from "public/menu.png";
 
 const links = [
   {
@@ -36,42 +36,71 @@ const links = [
 ];
 
 const Navbar = () => {
+  // Dark vs light mode theme context
   const { toggle, mode } = useContext(ThemeContext);
+  // Responsive menu state
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
-  // const [menuState, setMenuState] = useState(false);
-
-  // const toggleMenu = () => {
-  //   if (menuState === true) {
-  //     setMenuState(false);
-  //     console.log("Menu closed");
-  //   } else {
-  //     setMenuState(true);
-  //     console.log("Menu opened");
-  //   }
-  // };
+  const toggleMenu = () => {
+    if (isCollapsed === false) {
+      setIsCollapsed(true);
+      console.log("Menu closed");
+    } else {
+      setIsCollapsed(false);
+      console.log("Menu opened");
+    }
+  };
 
   return (
-    <div className={styles.container}>
-      <Link href="/" className={styles.logo}>
-        Hi, I&apos;m Grant.
-      </Link>
-      {/* <Image src={Menu} className={styles.menu} /> */}
-      <div className={styles.links}>
-        <DarkModeToggle />
-        {/* Generate a list of navigation links using the "Links" list above */}
-        {links.map((link) => (
-          <Link
-            key={link.id}
-            href={link.url}
-            className={
-              mode === "light" ? styles.lightModeLink : styles.darkModeLink
-            }
-          >
-            {link.title}
-          </Link>
-        ))}
+    <>
+      <div className={styles.container}>
+        <Link href="/" className={styles.logo}>
+          Hi, I&apos;m Grant.
+        </Link>
+        <div className={styles.navRight}>
+          <div className={styles.interactives}>
+            <Image
+              src={Menu}
+              className={mode === "light" ? styles.menuLight : styles.menuDark}
+              onClick={toggleMenu}
+              alt="button for navigation options"
+            />
+            <DarkModeToggle />
+          </div>
+          <div className={isCollapsed === true ? styles.links : styles.hidden}>
+            {links.map((link) => (
+              <Link
+                key={link.id}
+                href={link.url}
+                className={
+                  mode === "light" ? styles.lightModeLink : styles.darkModeLink
+                }
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+      <div className={styles.mobileList}>
+        <div
+          className={isCollapsed === true ? styles.hidden : styles.pattyLinks}
+        >
+          {links.map((link) => (
+            <Link
+              key={link.id}
+              href={link.url}
+              className={
+                mode === "light" ? styles.lightModeLink : styles.darkModeLink
+              }
+              onClick={() => setIsCollapsed(true)}
+            >
+              {link.title}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 
