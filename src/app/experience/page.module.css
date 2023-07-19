@@ -7,6 +7,11 @@
 .container {
 }
 
+.experience {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 .mainTitle {
   font-size: 80px;
   /* position: relative;
@@ -30,9 +35,7 @@
   border-radius: 5px;
   background-color: rgba(37, 37, 37, 0.784);
   color: #d3d3d3;
-  /* margin-top: 50px; */
   padding: 18px;
-  max-width: 600px;
 }
 
 .lightModeItem {
