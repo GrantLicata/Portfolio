@@ -1,10 +1,13 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import styles from "./page.module.css";
 import Button from "@/components/Button/Button";
 import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Github from "public/github.png";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const getData = () => {
   const data = items.applications;
@@ -15,6 +18,8 @@ const getData = () => {
 };
 
 const Portfolio = () => {
+  // Dark vs light mode theme context
+  const { toggle, mode } = useContext(ThemeContext);
   const data = getData();
 
   return (
@@ -26,15 +31,28 @@ const Portfolio = () => {
           <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
             <p className={styles.description}>{item.desc}</p>
-            {item.live ? (
-              <Button text="Visit The App" url={item.url} />
-            ) : (
+            <div className={styles.selection}>
+              {item.live ? (
+                <Button text="Visit The App" url={item.url} />
+              ) : (
+                <Link href={item.url}>
+                  <button className={styles.inDevelopmentButton}>
+                    In Development
+                  </button>
+                </Link>
+              )}
               <Link href={item.gitHub}>
-                <button className={styles.inDevelopmentButton}>
-                  In Development
-                </button>
+                <Image
+                  src={Github}
+                  className={
+                    mode === "light"
+                      ? styles.githubLightMode
+                      : styles.githubDarkMode
+                  }
+                  alt="Github icon"
+                />
               </Link>
-            )}
+            </div>
           </div>
           <div className={styles.imgContainer}>
             <Image

@@ -56,6 +56,23 @@
   color: white;
 }
 
+.selection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.githubDarkMode {
+  height: 40px;
+  width: auto;
+  filter: invert(1);
+}
+
+.githubLightMode {
+  height: 40px;
+  width: auto;
+}
+
 @media only screen and (max-width: 768px) {
   .mainTitle {
     font-size: 58px;

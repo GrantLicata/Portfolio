@@ -38,7 +38,7 @@ export const items = {
       image:
         "https://images.pexels.com/photos/1629212/pexels-photo-1629212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       url: "https://storynote.vercel.app/",
-      gitHub: "https://github.com/GrantLicata/Scribe",
+      gitHub: "https://github.com/GrantLicata/Storynote",
       live: false,
     },
   ],
