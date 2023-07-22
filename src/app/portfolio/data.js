@@ -33,59 +33,13 @@ export const items = {
     },
     {
       id: 4,
-      title: "Scribe",
+      title: "Storynote",
       desc: "An application built for the student and business professional who needs an open canvas approach to note taking. Users no longer have to separate notes into closed files and folders. All notes are available as an ongoing script to be added to, edited, and deleted as needed.",
       image:
         "https://images.pexels.com/photos/1629212/pexels-photo-1629212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      url: "/",
+      url: "https://storynote.vercel.app/",
       gitHub: "https://github.com/GrantLicata/Scribe",
       live: false,
     },
   ],
-  // illustrations: [
-  //   {
-  //     id: 1,
-  //     title: "Creative Portfolio",
-  //     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-  //     image:
-  //       "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Minimal Single Product",
-  //     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-  //     image:
-  //       "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Strong Together Charity",
-  //     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-  //     image:
-  //       "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
-  //   },
-  // ],
-  // websites: [
-  //   {
-  //     id: 1,
-  //     title: "Creative Portfolio",
-  //     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-  //     image:
-  //       "https://images.pexels.com/photos/3130810/pexels-photo-3130810.jpeg",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Minimal Single Product",
-  //     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-  //     image:
-  //       "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Strong Together Charity",
-  //     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vel tenetur necessitatibus unde natus perspiciatis, amet cupiditate ducimus possimus, eaque ex autem id nobis eum dolorem. Neque eveniet fugiat tenetur?",
-  //     image:
-  //       "https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg",
-  //   },
-  // ],
 };
