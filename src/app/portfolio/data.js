@@ -1,6 +1,7 @@
 import DuoChat from "./images/duochat.png";
 import CookBook from "./images/cookbook.jpg";
 import Contact from "./images/contact-manager.png";
+import Storynote from "./images/storynote.png";
 
 export const items = {
   applications: [
@@ -35,8 +36,7 @@ export const items = {
       id: 4,
       title: "Storynote",
       desc: "An application built for the student and business professional who needs an open canvas approach to note taking. Users no longer have to separate notes into closed files and folders. All notes are available as an ongoing script to be added to, edited, and deleted as needed.",
-      image:
-        "https://images.pexels.com/photos/1629212/pexels-photo-1629212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: Storynote,
       url: "https://storynote.vercel.app/",
       gitHub: "https://github.com/GrantLicata/Storynote",
       live: false,
