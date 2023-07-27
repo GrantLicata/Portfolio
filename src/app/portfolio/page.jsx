@@ -60,7 +60,7 @@ const Portfolio = () => {
               fill={true}
               src={item.image}
               sizes="max-width: 598px, max-height: 500px"
-              alt=""
+              alt="project image"
             />
           </div>
         </div>
