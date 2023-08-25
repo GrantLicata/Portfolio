@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className}>
       <body>
         <ThemeProvider>
-          <div className="container">
+          <div className="container max-w-[1366px] min-h-[100vh] my-auto mx-0 p-[60px] flex justify-between">
             <Navbar />
             {children}
             <Analytics />
