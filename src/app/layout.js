@@ -29,7 +29,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-// Notes:
-// - This is a parent component.
-// - All code placed into the return function will be provided to all pages.
