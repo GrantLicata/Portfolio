@@ -6,6 +6,7 @@ import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { ThemeContext } from "../../context/ThemeContext";
 import Image from "next/image";
 import Menu from "public/menu.png";
+import Logo from "public/logo.png";
 
 const links = [
   {
@@ -54,19 +55,11 @@ const Navbar = () => {
   return (
     <>
       <div className={styles.container}>
-        <Link href="/" className={styles.logo}>
-          Hi, I&apos;m Grant.
+        <Link href="/" className={styles.title}>
+          <Image src={Logo} className={styles.logo} alt="Personal logo" />
+          <h1 className={styles.name}>Grant Licata</h1>
         </Link>
         <div className={styles.navRight}>
-          <div className={styles.interactives}>
-            <Image
-              src={Menu}
-              className={mode === "light" ? styles.menuLight : styles.menuDark}
-              onClick={toggleMenu}
-              alt="button for navigation options"
-            />
-            <DarkModeToggle />
-          </div>
           <div className={isCollapsed === true ? styles.links : styles.hidden}>
             {links.map((link) => (
               <Link
@@ -79,6 +72,15 @@ const Navbar = () => {
                 {link.title}
               </Link>
             ))}
+          </div>
+          <div className={styles.interactives}>
+            <Image
+              src={Menu}
+              className={mode === "light" ? styles.menuLight : styles.menuDark}
+              onClick={toggleMenu}
+              alt="button for navigation options"
+            />
+            <DarkModeToggle />
           </div>
         </div>
       </div>
