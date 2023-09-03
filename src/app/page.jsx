@@ -12,11 +12,11 @@ export default function Home() {
           <br /> Design.
           <br /> Develop.
         </h1> */}
-        <h1 className={styles.title}>Hi, I'm Grant.</h1>
+        <h1 className={styles.title}>Hi, I&apos;m Grant.</h1>
         <p className={styles.description}>
-          A Project Manager and Software Developer. Here you'll find a curated
-          collection of my experiences, projects, and insights, all designed to
-          give you a deeper look into my world.
+          A Project Manager and Software Developer. Here you&apos;ll find a
+          curated collection of my experiences, projects, and insights, all
+          designed to give you a deeper look into my world.
         </p>
         <Button url="/portfolio" text="See My Work" />
       </div>
