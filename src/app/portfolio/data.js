@@ -30,7 +30,7 @@ export const items = {
       image: Contact,
       url: "https://contact-manager-gold.vercel.app/",
       gitHub: "https://github.com/GrantLicata/Contacts",
-      live: true,
+      live: false,
     },
     {
       id: 4,
