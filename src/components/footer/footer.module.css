@@ -24,11 +24,15 @@
     padding-bottom: 10px;
     display: flex;
     flex-direction: column-reverse;
-    align-items: start;
+    align-items: center;
   }
 
   .social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     padding-bottom: 5px;
+    justify-content: center;
   }
 
   .icon {

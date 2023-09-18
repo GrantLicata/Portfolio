@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import Facebook from "public/1.png";
-import Instagram from "public/2.png";
-import LinkedIn from "public/3.png";
-import YouTube from "public/4.png";
+import Facebook from "public/facebook_icon.png";
+import Instagram from "public/instagram_icon.png";
+import LinkedIn from "public/linkedin_icon.png";
+import YouTube from "public/youtube_icon.png";
 
 const Footer = () => {
   return (

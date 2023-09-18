@@ -56,4 +56,20 @@
   .image {
     display: none;
   }
+
+  .container {
+    display: block;
+  }
+
+  .title {
+    font-size: 48px;
+    background: linear-gradient(to bottom, #005893, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .description {
+    font-size: 20px;
+    font-weight: 300;
+  }
 }
