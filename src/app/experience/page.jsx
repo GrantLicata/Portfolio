@@ -3,8 +3,6 @@
 import Link from "next/link";
 import React, { useContext } from "react";
 import styles from "./page.module.css";
-import Button from "@/components/Button/Button";
-import Image from "next/image";
 import { items } from "./data.js";
 import { notFound } from "next/navigation";
 import { ThemeContext } from "@/context/ThemeContext";

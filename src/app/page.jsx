@@ -7,11 +7,6 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        {/* <h1 className={styles.title}>
-          Learn.
-          <br /> Design.
-          <br /> Develop.
-        </h1> */}
         <h1 className={styles.title}>Hi, I&apos;m Grant.</h1>
         <p className={styles.description}>
           A Project Manager and Software Developer. Here you&apos;ll find a
