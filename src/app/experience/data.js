@@ -4,7 +4,7 @@ export const items = {
       title: "Project Manager",
       employer: "Seagen",
       year_start: 2021,
-      year_end: "Present",
+      year_end: 2023,
       employer_url: "https://www.seagen.com/",
       description:
         "Leading project teams towards the successful development and implementation of new programs, equipment, and facilities.",
@@ -82,7 +82,7 @@ export const items = {
       organization: "PMI",
       title: "Project Management Professional (PMP)",
       year_start: 2020,
-      year_end: 2023,
+      year_end: 2026,
       organization_url: "https://www.pmi.org/",
       description:
         "As the world’s leading authority on project management, PMI created PMP Certification to recognize project managers who have proven they have the skills to successfully manage projects. Project Management Professional (PMP)® certification represents an elite group of project managers. It proves project leadership experience and expertise in any way of working.",
