@@ -4,9 +4,6 @@
   padding-top: 4px;
 }
 
-.container {
-}
-
 .experience {
   margin: 0 auto;
   max-width: 600px;
@@ -14,8 +11,6 @@
 
 .mainTitle {
   font-size: 65px;
-  /* position: relative;
-  top: 10px; */
 }
 
 .categoryTitle {
@@ -43,7 +38,6 @@
   border-radius: 5px;
   background-color: rgba(234, 232, 232, 0.784);
   color: black;
-  /* margin-top: 50px; */
   padding: 18px;
   max-width: 600px;
 }
@@ -53,7 +47,6 @@
   border-radius: 5px;
   background-color: rgba(74, 74, 74, 0.784);
   color: #d3d3d3;
-  /* margin-top: 50px; */
   padding: 18px;
   max-width: 600px;
 }
