@@ -98,6 +98,10 @@
     flex-direction: column;
   }
 
+  .lightModeItem {
+    flex-direction: column;
+  }
+
   .dates {
     margin-bottom: 5px;
   }
