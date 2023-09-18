@@ -93,4 +93,12 @@
   .categoryTitle {
     font-size: 28px;
   }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .dates {
+    margin-bottom: 5px;
+  }
 }
