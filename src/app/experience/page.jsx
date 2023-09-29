@@ -126,7 +126,13 @@ const Experience = () => {
                 </p>
               </div>
               <div className={styles.cardRight}>
-                <p className={styles.titleAndEmployer}>
+                <p
+                  className={
+                    mode === "dark"
+                      ? styles.cardTitle
+                      : styles.lightModeCardTitle
+                  }
+                >
                   {item.title} &bull;{" "}
                   <Link
                     className={
