@@ -4,9 +4,12 @@ import Image from "next/image";
 import Comments from "@/components/comments/Comments";
 
 const getData = async (slug) => {
-  const res = await fetch(`https://blog-grantlicata.vercel.app/api/posts/${slug}`, {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `https://blog-grantlicata.vercel.app/api/posts/${slug}`,
+    {
+      cache: "no-store",
+    }
+  );
 
   if (!res.ok) {
     throw new Error("Failed");
@@ -38,7 +41,9 @@ const SinglePage = async ({ params }) => {
             )}
             <div className={styles.userTextContainer}>
               <span className={styles.username}>{data?.user.name}</span>
-              <span className={styles.date}>01.01.2024</span>
+              <span className={styles.date}>
+                {data?.createdAt.substring(0, 10)}
+              </span>
             </div>
           </div>
         </div>
@@ -54,9 +59,9 @@ const SinglePage = async ({ params }) => {
             className={styles.description}
             dangerouslySetInnerHTML={{ __html: data?.desc }}
           />
-          <div className={styles.comment}>
+          {/* <div className={styles.comment}>
             <Comments postSlug={slug} />
-          </div>
+          </div> */}
         </div>
         <Menu />
       </div>
