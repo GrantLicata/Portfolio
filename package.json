@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@next-auth/prisma-adapter": "^0.4.4-canary.81",
+    "@prisma/client": "^5.3.1",
     "@vercel/analytics": "^1.0.1",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
@@ -21,5 +23,8 @@
     "react-dom": "18.2.0",
     "react-quill": "^2.0.0",
     "swr": "^2.1.5"
+  },
+  "devDependencies": {
+    "prisma": "^5.3.1"
   }
 }
