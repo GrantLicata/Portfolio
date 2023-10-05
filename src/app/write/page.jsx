@@ -15,10 +15,10 @@ import {
 import { app } from "@/utils/firebase";
 import dynamic from "next/dynamic";
 
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+
 const WritePage = () => {
   const { status } = useSession();
-  
-  const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
   const router = useRouter();
 
@@ -146,7 +146,7 @@ const WritePage = () => {
           className={styles.textArea}
           theme="bubble"
           value={value}
-          onChange={(e) => setValue(value)}
+          onChange={(value) => setValue(value)}
           placeholder="Tell your story..."
         />
       </div>
