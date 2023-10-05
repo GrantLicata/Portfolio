@@ -12,15 +12,15 @@
   font-size: 14px;
 }
 
-.categoryItem.style {
+.categoryItem.lifestyle {
   background-color: #57c4ff31;
 }
 
-.categoryItem.fashion {
+.categoryItem.business {
   background-color: #da85c731;
 }
 
-.categoryItem.food {
+.categoryItem.product {
   background-color: #7fb88133;
 }
 
