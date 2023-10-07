@@ -32,7 +32,7 @@ const SinglePage = async ({ params }) => {
               <div className={styles.userImageContainer}>
                 <Image
                   src={data.user.image}
-                  alt=""
+                  alt="Signed in user image from google"
                   fill
                   className={styles.avatar}
                 />

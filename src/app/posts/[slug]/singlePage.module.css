@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-bottom: 50px;
 }
 
 .textContainer {
@@ -50,6 +51,7 @@
 
 .image {
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .content {
@@ -59,7 +61,7 @@
 
 .post {
   flex: 5;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 .description p {

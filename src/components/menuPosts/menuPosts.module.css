@@ -39,28 +39,28 @@
   width: max-content;
 }
 
+.category.lifestyle {
+  background-color: #008080;
+}
+
+.category.business {
+  background-color: #8b6508;
+}
+
+.category.product {
+  background-color: #800000;
+}
+
 .category.travel {
-  background-color: #ff7857;
+  background-color: #3d3d3d;
 }
 
-.culture {
-  background-color: #ffb14f;
+.category.coding {
+  background-color: #0b3d02;
 }
 
-.food {
-  background-color: #7fb881;
-}
-
-.fashion {
-  background-color: #ff7887;
-}
-
-.coding {
-  background-color: #775aec;
-}
-
-.style {
-  background-color: #789cff;
+.category.food {
+  background-color: #001f3f;
 }
 
 .postTitle {

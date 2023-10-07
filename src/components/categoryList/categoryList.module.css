@@ -24,27 +24,27 @@
 }
 
 .category.style {
-  background-color: #57c4ff31;
+  background-color: #008080;
 }
 
 .category.fashion {
-  background-color: #da85c731;
-}
-
-.category.food {
-  background-color: #7fb88133;
+  background-color: #8b6508;
 }
 
 .category.travel {
-  background-color: #ff795736;
+  background-color: #800000;
 }
 
 .category.culture {
-  background-color: #ffb04f45;
+  background-color: #3d3d3d;
 }
 
 .category.coding {
-  background-color: #5e4fff31;
+  background-color: #0b3d02;
+}
+
+.category.food {
+  background-color: #001f3f;
 }
 
 .image {

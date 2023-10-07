@@ -22,12 +22,11 @@ const MenuPosts = async () => {
       {data?.map((item) => (
         <Link key={item.id} href="/" className={styles.item}>
           <div className={styles.textContainer}>
-            <span className={`${styles.category} ${styles.travel}`}>
+            <span className={`${styles.category} ${styles[item.catSlug]}`}>
               {item.catSlug}
             </span>
             <h3 className={styles.postTitle}>{item.title}</h3>
             <div className={styles.detail}>
-              {/* <span className={styles.username}>John Doe</span> */}
               <span className={styles.date}>
                 {item.createdAt.substring(0, 10)}
               </span>

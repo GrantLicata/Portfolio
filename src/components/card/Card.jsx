@@ -7,7 +7,9 @@ const Card = ({ key, item }) => {
     <div className={styles.container} key={key}>
       {item.img && (
         <div className={styles.imageContainer}>
-          <Image src={item.img} alt="" fill className={styles.image} />
+          <Link href={`/posts/${item.slug}`}>
+            <Image src={item.img} alt="" fill className={styles.image} />
+          </Link>
         </div>
       )}
       <div className={styles.textContainer}>
@@ -20,7 +22,6 @@ const Card = ({ key, item }) => {
         <Link href={`/posts/${item.slug}`}>
           <h1>{item.title}</h1>
         </Link>
-        {/* <p className={styles.desc}>{item.desc.substring(0, 60)}</p> */}
         <div
           className={styles.desc}
           dangerouslySetInnerHTML={{

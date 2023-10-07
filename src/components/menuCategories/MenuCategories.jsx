@@ -30,8 +30,8 @@ const MenuCategories = () => {
         Travel
       </Link>
       <Link
-        href="/blog?cat=culture"
-        className={`${styles.categoryItem} ${styles.culture}`}
+        href="/blog?cat=books"
+        className={`${styles.categoryItem} ${styles.books}`}
       >
         Books
       </Link>
@@ -40,6 +40,12 @@ const MenuCategories = () => {
         className={`${styles.categoryItem} ${styles.coding}`}
       >
         Coding
+      </Link>
+      <Link
+        href="/blog?cat=food"
+        className={`${styles.categoryItem} ${styles.food}`}
+      >
+        Food
       </Link>
     </div>
   );

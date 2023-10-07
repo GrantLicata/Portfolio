@@ -13,25 +13,36 @@
 }
 
 .categoryItem.lifestyle {
-  background-color: #57c4ff31;
+  background-color: #008080;
+  color: white;
 }
 
 .categoryItem.business {
-  background-color: #da85c731;
+  background-color: #8b6508;
+  color: white;
 }
 
 .categoryItem.product {
-  background-color: #7fb88133;
+  background-color: #800000;
+  color: white;
 }
 
 .categoryItem.travel {
-  background-color: #ff795736;
-}
-
-.categoryItem.culture {
-  background-color: #ffb04f45;
+  background-color: #3d3d3d;
+  color: white;
 }
 
 .categoryItem.coding {
-  background-color: #5e4fff31;
+  background-color: #0b3d02;
+  color: white;
+}
+
+.categoryItem.food {
+  background-color: #001f3f;
+  color: white;
+}
+
+.categoryItem.books {
+  background-color: #2f4f4f;
+  color: white;
 }
