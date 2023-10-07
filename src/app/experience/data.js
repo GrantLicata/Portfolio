@@ -71,12 +71,21 @@ export const items = {
   certifications: [
     {
       organization: "Scrum Alliance",
-      title: "Certified Scrum Master (CSM)",
+      title: "Certified Scrum Product Owner (CSPO)",
       year_start: 2023,
       year_end: 2025,
       organization_url: "https://www.scrumalliance.org/",
       description:
         "A scrum master is the scrum team member tasked with fostering an effective and productive working environment and guiding others to understand scrum values, principles and practices. Scrum masters tend to be people-oriented, have a high level of emotional intelligence, and find joy in helping team members to grow.",
+    },
+    {
+      organization: "Scrum Alliance",
+      title: "Certified Scrum Master (CSM)",
+      year_start: 2023,
+      year_end: 2025,
+      organization_url: "https://www.scrumalliance.org/",
+      description:
+        "CSPO covers the following topics: Agile, Scrum fundamentals, and majority of non-Scrum topics that include: Product Discovery, Product Vision, Product Roadmap, Release Planning, Estimation, use stories, burndown and burn up charts etc. Primary focus of this certification to help the participants to understand the role of a Product Owner in depth by going through characteristics, Rights, Responsibilities, some common anti-patterns, what makes a Product Owner great Product Owner etc.",
     },
     {
       organization: "PMI",
