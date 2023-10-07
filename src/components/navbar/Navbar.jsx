@@ -21,16 +21,21 @@ const links = [
   },
   {
     id: 3,
+    title: "Blog",
+    url: "/blog",
+  },
+  {
+    id: 4,
     title: "Portfolio",
     url: "/portfolio",
   },
   {
-    id: 4,
+    id: 5,
     title: "Experience",
     url: "/experience",
   },
   {
-    id: 5,
+    id: 6,
     title: "Contact",
     url: "/contact",
   },

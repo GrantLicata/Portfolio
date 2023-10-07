@@ -40,7 +40,8 @@ const Contact = () => {
         <div className={styles.imgContainer}>
           <Image
             src={Conversation}
-            alt=""
+            alt="Two people sitting st a desk talking"
+            q={100}
             fill={true}
             sizes="max-width: 600px, max-height: 600px"
             className={styles.image}

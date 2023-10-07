@@ -15,8 +15,9 @@ const Footer = () => {
         <Link href="https://www.facebook.com/grant.licata/">
           <Image
             src={Facebook}
-            width={15}
-            height={15}
+            w={15}
+            h={15}
+            q={100}
             className={styles.icon}
             alt="Facebook account"
           />
@@ -24,8 +25,9 @@ const Footer = () => {
         <Link href="https://www.instagram.com/grantlicata/">
           <Image
             src={Instagram}
-            width={15}
-            height={15}
+            w={15}
+            h={15}
+            q={100}
             className={styles.icon}
             alt="Instagram account"
           />
@@ -33,8 +35,9 @@ const Footer = () => {
         <Link href="https://www.linkedin.com/in/grantlicata/">
           <Image
             src={LinkedIn}
-            width={15}
-            height={15}
+            w={15}
+            h={15}
+            q={100}
             className={styles.icon}
             alt="Linkedin account"
           />
@@ -42,8 +45,9 @@ const Footer = () => {
         <Link href="https://www.youtube.com/@grantlicata4493/featured">
           <Image
             src={YouTube}
-            width={15}
-            height={15}
+            w={15}
+            h={15}
+            q={100}
             className={styles.icon}
             alt="Youtube account"
           />

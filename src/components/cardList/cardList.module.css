@@ -1,0 +1,15 @@
+.container {
+  flex: 5;
+}
+
+.title {
+  margin: 0px 0px 30px 0px;
+}
+
+.noPost {
+  padding: 50px 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  background: rgba(109, 107, 107, 0.294);
+  border-radius: 10px;
+}
