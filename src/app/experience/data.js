@@ -96,5 +96,23 @@ export const items = {
       description:
         "As the world’s leading authority on project management, PMI created PMP Certification to recognize project managers who have proven they have the skills to successfully manage projects. Project Management Professional (PMP)® certification represents an elite group of project managers. It proves project leadership experience and expertise in any way of working.",
     },
+    {
+      organization: "ASQ",
+      title: "Certified Quality Improvement Associate (CQIA)",
+      year_start: 2017,
+      year_end: "Present",
+      organization_url: "https://asq.org/",
+      description:
+        "The Certified Quality Improvement Associate has a basic knowledge of quality tools and their uses and is involved in quality improvement projects, but doesn't necessarily come from a traditional quality area.",
+    },
+    {
+      organization: "ASQ",
+      title: "Certified Quality Process Analyst (CQPA)",
+      year_start: 2017,
+      year_end: "Present",
+      organization_url: "https://asq.org/",
+      description:
+        "The Certified Quality Process Analyst is a paraprofessional who, in support of and under the direction of quality engineers or supervisors, analyzes and solves quality problems and is involved in quality improvement projects.",
+    },
   ],
 };
