@@ -8,12 +8,12 @@
   border: none;
   border-radius: 5px;
   padding: 16px;
-  background-color: crimson;
+  background-color: #5553c2;
   color: white;
   cursor: pointer;
 }
 
 .button:disabled {
-  background-color: rgba(137, 18, 42, 0.473);
+  background-color: #28266474;
   cursor: not-allowed;
 }
