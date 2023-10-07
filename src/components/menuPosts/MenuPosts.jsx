@@ -3,9 +3,12 @@ import Link from "next/link";
 import styles from "./menuPosts.module.css";
 
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/posts/popular", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    "https://blog-grantlicata.vercel.app/api/posts/popular",
+    {
+      cache: "no-store",
+    }
+  );
 
   if (!res.ok) {
     throw new Error("Failed");
