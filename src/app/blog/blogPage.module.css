@@ -1,9 +1,10 @@
 .title {
-  background-color: coral;
-  color: white;
-  padding: 5px 10px;
-  text-align: center;
-  text-transform: capitalize;
+  font-size: 65px;
+}
+
+.subTitle {
+  color: #53c28b;
+  margin: 0px 0px 30px 0px;
 }
 
 .content {
