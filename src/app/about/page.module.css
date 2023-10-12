@@ -22,8 +22,7 @@
 }
 
 .textContainer {
-  display: flex;
-  gap: 100px;
+  columns: auto 30rem;
 }
 
 .item {
