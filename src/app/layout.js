@@ -5,6 +5,7 @@ import Footer from "@/components/footer/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { Analytics } from "@vercel/analytics/react";
 import AuthProvider from "@/providers/AuthProvider";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
+      <head>
+        <Script
+          id="Adsense-id"
+          data-ad-client="ca-pub-5883791306244864"
+          async="true"
+          strategy="beforeInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5883791306244864"
+        />
+      </head>
       <body>
         <AuthProvider>
           <ThemeProvider>
