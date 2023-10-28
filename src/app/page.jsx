@@ -8,6 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.item}>
         <h1 className={styles.title}>Hi, I&apos;m Grant.</h1>
+        {/* Adjust the description... */}
         <p className={styles.description}>
           A Project Manager and Software Developer. Here you&apos;ll find a
           curated collection of my experiences, projects, and insights, all
