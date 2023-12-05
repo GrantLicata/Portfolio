@@ -1,6 +1,22 @@
 export const items = {
   experience: [
     {
+      title: "Senior Project Manager",
+      employer: "AGC Biologics",
+      year_start: 2023,
+      year_end: "Present",
+      employer_url: "https://www.agcbio.com/",
+      description:
+        "Providing program direction, managing timelines, and project control across both internal stakeholders and external clients.",
+      skills: [
+        "Project Management",
+        "Program Management",
+        "Client Relationship Management",
+        "Process Improvement",
+        "Waterfall Methodologies",
+      ],
+    },  
+    {
       title: "Project Manager",
       employer: "Seagen",
       year_start: 2021,
