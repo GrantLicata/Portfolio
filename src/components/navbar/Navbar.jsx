@@ -20,11 +20,6 @@ const links = [
     url: "/about",
   },
   {
-    id: 3,
-    title: "Blog",
-    url: "/blog",
-  },
-  {
     id: 4,
     title: "Portfolio",
     url: "/portfolio",
