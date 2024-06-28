@@ -7,3 +7,4 @@
 5. It should contain less pictures and graphics
 6. The color should be that off blue found in the developer example explored earlier in my dev career.
 7. Generate the new portfolio site on a separate github repo so that the old one can remain as a portfolio item
+8. THe portfolio should be structured similar to a resume given the marketing strategy there
